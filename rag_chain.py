@@ -11,7 +11,7 @@ from gradio_client import Client
 from pydantic import PrivateAttr
 from langchain_core.outputs import Generation, LLMResult
 from retriever import Retriever
-from ta_pipeline import get_llm_port
+from pipeline import get_llm_port
 
 class GradioLLMWrapper(BaseLLM, Runnable):
     _client: Any = PrivateAttr()
